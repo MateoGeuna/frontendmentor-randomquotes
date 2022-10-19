@@ -1,6 +1,80 @@
+@font-face {
+    font-family: Manrope;
+    src: url(https://fonts.google.com/specimen/Manrope);
+    font-weight: 800;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+}
+
+.widget {
+    background-color: var(--dark-grayish-blue);
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+p.title {
+    color: var(--neon-green); 
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+p.quotes {
+    text-align: center;
+    color: var(--light-cyan);
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+div.image-line {
+    padding-bottom: 15px;
+}
+
+div.image-circle {
+    position: absolute;
+    bottom: -16px;
+    background: var(--neon-green);
+    padding: 5px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: fixed;
+    bottom: 0px;
 }
 
 .attribution a {
