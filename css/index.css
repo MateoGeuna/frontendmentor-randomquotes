@@ -1,12 +1,8 @@
-@font-face {
-    font-family: Manrope;
-    src: url(https://fonts.google.com/specimen/Manrope);
-    font-weight: 800;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
 }
 
 :root {
@@ -40,9 +36,10 @@ body {
 }
 
 p.title {
-    color: var(--neon-green); 
+    color: var(--neon-green);
     margin-top: 0px;
     font-size: 15px;
+    letter-spacing: 3px;
 }
 
 p.quotes {
@@ -50,6 +47,21 @@ p.quotes {
     color: var(--light-cyan);
     margin-top: 0px;
     font-size: 28px;
+}
+
+div#quote-content {
+    text-align: center;
+    color: white;
+}
+
+div.message.warning {
+    color: var(--light-cyan);
+    font-size: 20px;
+}
+
+div.message.error {
+    color: #ff3f3f;
+    font-size: 15px;
 }
 
 div.image-line {
@@ -70,13 +82,48 @@ div.image-circle {
     align-items: center;
 }
 
+.loader {
+    border: 8px solid var(--light-cyan);
+    border-radius: 50%;
+    border-top: 8px solid var(--neon-green);
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
     position: fixed;
     bottom: 0px;
+    margin-bottom: 15px;
+    color: var(--light-cyan);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }

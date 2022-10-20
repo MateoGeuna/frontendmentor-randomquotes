@@ -7,22 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Advice generator app</title>
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
 </head>
 
 <body>
   <article class="widget">
-    <p class="title">
-      ADVICE #157
-    </p>
+    <div id="quote-content">
 
-    <p class="quotes">
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequuntur similique delectus rem.""
-    </p>
+    </div>
     <div class="image-line">
      <img src="images/pattern-divider-desktop.svg" alt="linea de puntos">
     </div>
-    <div class="image-circle">
-      <img src="images/icon-dice.svg" alt="">
+    <div class="image-circle" onclick="generateNewQuote()">
+        <img  src="images/icon-dice.svg" alt="">
     </div>
   </article>
   
