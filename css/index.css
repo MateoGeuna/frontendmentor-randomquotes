@@ -128,3 +128,15 @@ div.image-circle {
     color: var(--neon-green);
     text-decoration: none;
 }
+
+@media only screen and (max-width: 550px) {
+    .widget {
+        width: 300px;
+    }
+    p.quotes{
+        font-size: 18px;
+    }
+    div.image-line img {
+        width: 100%;
+    }
+  }

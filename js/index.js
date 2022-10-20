@@ -25,7 +25,7 @@ function requestApiQuotes(){
 
 function showQuotesMessage(dataQuote) {
     document.getElementById("quote-content").innerHTML = `
-        <p class="title"> ADVICE ${dataQuote.slip.id}</p>
+        <p class="title"> ADVICE #${dataQuote.slip.id}</p>
         <p class="quotes">"${dataQuote.slip.advice}"</p>
         `;
 }
