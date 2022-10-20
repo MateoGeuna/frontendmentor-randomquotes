@@ -10,6 +10,8 @@ function generateNewQuote() {
         });
 }
 
+generateNewQuote();
+
 // llamada a la Api
 function requestApiQuotes(){
     return new Promise((resolve, reject) => {

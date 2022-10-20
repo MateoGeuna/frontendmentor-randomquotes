@@ -80,6 +80,7 @@ div.image-circle {
     align-content: center;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--light-cyan) 0px 0px 4px 2px
 }
 
 .loader {
@@ -124,6 +125,6 @@ div.image-circle {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--neon-green);
     text-decoration: none;
 }
